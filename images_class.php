@@ -21,7 +21,7 @@ function ImgResize_lib($original,$type="jpg",$width=0,$height=0,$newpath=0,$dbch
   }
 
   # 원본 이미지로 부터 JPEG 파일을 생성
-  $otype = GetImageSize($original);															#이미지에 대한 정보 가져오기.
+  $otype = GetImageSize($original);															#이미지에 대한 정보 가져오기
   switch($otype[2]) {
     case 1:
       $img = ImageCreateFromGIF($original);													#주어진 파일 이름에서 얻은 이미지를 나타내는 이미지 식별자를 반환(GIF)
